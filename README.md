@@ -31,7 +31,7 @@ export default {
 
 
 My Docker image build: 
-docker image build -t palacios_allan_assignment-12:latest .
+docker image build -t palacios_allan_coding_assignment12:latest .
 
 My Docker Container Run:
-$ docker run -dp 8083:6006 --name palacios_allan_coding_assignment-12 palacios_allan_assignment-12:latest
+$ docker run -dp 8083:6006 --name palacios_allan_coding_assignment12 palacios_allan_coding_assignment12:latest
