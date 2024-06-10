@@ -8,4 +8,4 @@ COPY package.json /palacios_allan_ui_garden/
  
 RUN npm install
  
-CMD ["npm", "start"]
+CMD ["npm", "run", "storybook"]

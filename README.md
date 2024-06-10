@@ -28,3 +28,10 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+My Docker image build: 
+docker image build -t palacios_allan_assignment-12:latest .
+
+My Docker Container Run:
+$ docker run -dp 8083:6006 --name palacios_allan_coding_assignment-12 palacios_allan_assignment-12:latest
