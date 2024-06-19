@@ -26,6 +26,10 @@ const StyledButton = styled.button<MyButtonProps>`
   }
 `;
 
+export function sum(a: number, b: number) {
+  return a + b;
+ }
+
 const MyButton = ({ disabled = false, label = "Button" }: MyButtonProps) => {
   return <StyledButton disabled={disabled}>{label}</StyledButton>;
 };

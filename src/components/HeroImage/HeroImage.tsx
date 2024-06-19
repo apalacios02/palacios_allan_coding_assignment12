@@ -23,6 +23,10 @@ const StyledHeroImage = styled.img<HeroImageProps>`
   }
 `;
 
+export function sum(a: number, b: number) {
+  return a + b;
+ }
+
 const HeroImage = ({ disabled = false, src = "", alt = "Hero Image" }: HeroImageProps) => {
   return <StyledHeroImage src={src} alt={alt} disabled={disabled} />;
 };
