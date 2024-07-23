@@ -29,6 +29,16 @@ export function sum(a: number, b: number) {
 
 const HeroImage = ({ disabled = false, src = "", alt = "Hero Image" }: HeroImageProps) => {
   return <StyledHeroImage src={src} alt={alt} disabled={disabled} />;
+  
+};
+
+const AnotherComponent = () => {
+  return (
+    <div>
+      <HeroImage src="src/components/HeroImage/Nicol Bolas.jpg" alt="Nicol Bolas" />
+      <div data-testid="myHeroImage">Custom Element</div>
+    </div>
+  );
 };
 
 export default HeroImage;
