@@ -1,0 +1,12 @@
+FROM node:21-bullseye
+
+WORKDIR /palacios_allan_ui_garden/
+
+COPY package*.json .
+
+RUN npm ci
+
+RUN npx playwright install --with-deps chromium
+
+COPY . .
+CMD ["npm","run","ci:test"]
